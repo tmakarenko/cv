@@ -7,11 +7,12 @@ $border: rgb(255,210,0)
 
 
 .main
-	height: 150px
-	width: 250px
+	height: 90px
+	width: 90px
 	position: relative
 	left: 40%
 	top: 200px
+	overflow-y: hidden
 
 .main
 	margin: 10px
@@ -25,14 +26,15 @@ $border: rgb(255,210,0)
 	opacity: 0
 
 header
-	width: 220px
+	width: 50px
 	height: 70px
-	margin-left: 5%
+	margin-left: 20%
 	border-bottom: rgb(0,0,0) 2px solid
 
 .logo
 	height: 50px
 	margin: 10px;
+	margin-left: -2.5%
 	float: left
 		
 .logo img
@@ -44,8 +46,6 @@ header
 	margin-left: 5%
 	margin-top: 2%
 
-.github, .fb
-	
 
 .article-logo
 	width: 100%
@@ -57,8 +57,8 @@ h1
 	width: 100px
 	margin: 0 auto
 
-.article-text
-	width: 40em
+.article-text, 
+	width: 60%
 	margin: 25px auto
 	font-size: 1.3em
 	line-height: 1.3em
@@ -88,6 +88,44 @@ h1
 	text-align: center
 	background: $border
 	margin: 20px 0
+
+.content
+	hr
+		border-color: $border !important
+h2
+		text-align: center
+		color: black
+		font-size: 3em
+		margin-bottom: 40px
 .portfolio
-	display: none
-	visibility: hidden
+	text-align: center
+	margin: 45px auto
+	width: 60%
+	overflow: hidden
+    text-align: center
+
+
+	.pf-item
+		display: inline-block
+		float: left
+		padding: 5px
+		margin: 15px 15px 
+		border: 1px solid $border
+
+.contact
+	text-align: center
+	width: 100%
+	margin: 45px auto
+	.items
+		border: 2px solid $border
+		height: 100px
+		width: 60%
+		padding: 5px
+		margin-left: 20%
+
+	.contact-item
+		float: left
+		margin-left: 25px
+
+::-webkit-scrollbar-thumb
+	background-color: $border

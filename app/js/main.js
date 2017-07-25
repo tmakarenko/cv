@@ -1,17 +1,11 @@
 $('.cv').on('click',function (){
 	open('cv');
+	$(this).on('click',function(){
+		backButton('cv');
+	})
 });
 
-$('.fb').on('click',function (){
-	open('fb');
-});
-
-$('.github').on('click',function (){
-	open('gh');
-});
-
-function open(target){
-	var elems = [];
+var elems = [];
 
 	elems['cv']={
 			show:'.container',
@@ -19,13 +13,17 @@ function open(target){
 		}
 
 	elems['fb']={
-			show:'.protfolio',
+			show:'.portfolio',
 			hide:'.cv, .github' 
 		}
 	elems['gh']={
 			show:'.contact',
 			hide:'.cv, .fb' 
 		}
+
+
+function open(target){
+	
 	
 	$(elems[target].hide).animate({opacity:0},1500,
 		function(){
@@ -33,15 +31,17 @@ function open(target){
 				display:'none',
 				visibility:'hidden'
 			});
+
 		}
 	)
+	console.log();
 
 	$(elems[target].show).css({
 		display:'block',
 		visibility:'visible'
 	});
 	
-	$('.container').animate({
+	$($(elems[target].show)).animate({
 		opacity: 1
 	}, 1500);
 
@@ -76,7 +76,7 @@ function open(target){
 	);
 
 	$('.logo').animate({
-		'margin-left': "45%",
+		'margin-left': "43%",
 		 width: '150px',
 		 height: '150px'
 		},
@@ -85,3 +85,64 @@ function open(target){
 
 	
 };
+
+
+function backButton(target){
+
+	$('.main').animate({
+			height: "150px",
+			width: "250px",
+			position: "relative",
+			top: "200px",
+			left: "40%",
+			margin: '0'
+		},
+		1500
+	);
+	
+
+	$('header').animate({
+		width: "220px",
+		height: "70px",
+		'margin-left': "5%",
+		'margin-top': "0"
+		},
+		1500
+	);
+
+
+	$('.logo img').animate({
+		 width: '50px',
+		 height: '50px'
+		},
+		1500
+	);
+
+	$('.logo').animate({
+		'margin-left': "0",
+		 width: '50px',
+		 height: '50px'
+		},
+		1500
+	);
+
+	$('.container, .portfolio, .contact').animate({
+		opacity: 0
+	},1500,
+		function(){
+			$('.container, .portfolio, .contact').css({
+				visibility:'hidden',
+				display:'none'
+			})
+		}
+	)
+
+
+	/*$('.cv, .fb, .gh').css({
+				display:'block',
+				visibility:'visible'
+			});
+
+	$('.cv, .fb, .gh').animate({opacity:1},1500)*/
+
+}

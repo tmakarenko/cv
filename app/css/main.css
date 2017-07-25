@@ -1,9 +1,10 @@
 .main {
-  height: 150px;
-  width: 250px;
+  height: 90px;
+  width: 90px;
   position: relative;
   left: 40%;
-  top: 200px; }
+  top: 200px;
+  overflow-y: hidden; }
 
 .main {
   margin: 10px;
@@ -17,14 +18,15 @@
   opacity: 0; }
 
 header {
-  width: 220px;
+  width: 50px;
   height: 70px;
-  margin-left: 5%;
+  margin-left: 20%;
   border-bottom: black 2px solid; }
 
 .logo {
   height: 50px;
   margin: 10px;
+  margin-left: -2.5%;
   float: left; }
 
 .logo img {
@@ -48,7 +50,7 @@ h1 {
   margin: 0 auto; }
 
 .article-text {
-  width: 40em;
+  width: 60%;
   margin: 25px auto;
   font-size: 1.3em;
   line-height: 1.3em;
@@ -77,6 +79,41 @@ h1 {
   background: #ffd200;
   margin: 20px 0; }
 
+.content hr {
+  border-color: #ffd200 !important; }
+
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 3em;
+  margin-bottom: 40px; }
+
 .portfolio {
-  display: none;
-  visibility: hidden; }
+  text-align: center;
+  margin: 45px auto;
+  width: 60%;
+  overflow: hidden;
+    overflow-text-align: center; }
+  .portfolio .pf-item {
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    margin: 15px 15px;
+    border: 1px solid #ffd200; }
+
+.contact {
+  text-align: center;
+  width: 100%;
+  margin: 45px auto; }
+  .contact .items {
+    border: 2px solid #ffd200;
+    height: 100px;
+    width: 60%;
+    padding: 5px;
+    margin-left: 20%; }
+  .contact .contact-item {
+    float: left;
+    margin-left: 25px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffd200; }
