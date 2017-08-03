@@ -114,6 +114,3 @@ h2 {
   .contact .contact-item {
     float: left;
     margin-left: 25px; }
-
-::-webkit-scrollbar-thumb {
-  background-color: #ffd200; }

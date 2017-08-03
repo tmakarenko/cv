@@ -23,7 +23,7 @@ var elems = [];
 
 
 function open(target){
-	
+$('.cv').on('click',function (){});
 	
 	$(elems[target].hide).animate({opacity:0},1500,
 		function(){
