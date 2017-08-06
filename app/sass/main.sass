@@ -24,6 +24,7 @@ $border: rgb(255,210,0)
 	display: none
 	visibility: hidden
 	opacity: 0
+	text-align: center
 
 header
 	width: 50px
@@ -56,6 +57,7 @@ h1
 	text-align: center
 	width: 100px
 	margin: 0 auto
+	padding: 0 10px
 
 .article-text,
 	width: 60%
@@ -100,19 +102,36 @@ h2
 .portfolio
 	text-align: center
 	margin: 45px auto
-	width: 60%
+	width: 80%
 	overflow: hidden
     text-align: center
 
 	.pf-items
-		width: 80%
-		margin: 0 auto
+		width: 70%
+		margin: 0 23%
+		text-align: center
 		.pf-item
 			display: inline-block
 			float: left
 			padding: 5px
+			padding-top: -50px
 			margin: 15px 15px
 			border: 1px solid $border
+		.pf-item-text
+			position: absolute
+			margin-top: 50px
+			margin-left: 5px
+			width: 140px
+			height: 20px
+			background-color: black
+			color: $border
+			opacity: 0
+		.pf-item:hover img
+			opacity: 0.2
+		.pf-item:hover .pf-item-text
+			opacity: 1
+			
+
 
 .contact
 	text-align: center
@@ -121,7 +140,7 @@ h2
 	.items
 		border: 2px solid $border
 		height: 100px
-		width: 65%
+		width: 500px
 		padding: 5px
 		margin: 20px auto
 

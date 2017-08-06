@@ -15,7 +15,8 @@
   width: 100%;
   display: none;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  text-align: center; }
 
 header {
   width: 50px;
@@ -47,7 +48,8 @@ h1 {
   color: #ffd200;
   text-align: center;
   width: 100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .article-text {
   width: 60%;
@@ -91,18 +93,33 @@ h2 {
 .portfolio {
   text-align: center;
   margin: 45px auto;
-  width: 60%;
+  width: 80%;
   overflow: hidden;
     overflow-text-align: center; }
   .portfolio .pf-items {
-    width: 80%;
-    margin: 0 auto; }
+    width: 70%;
+    margin: 0 23%;
+    text-align: center; }
     .portfolio .pf-items .pf-item {
       display: inline-block;
       float: left;
       padding: 5px;
+      padding-top: -50px;
       margin: 15px 15px;
       border: 1px solid #ffd200; }
+    .portfolio .pf-items .pf-item-text {
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 5px;
+      width: 140px;
+      height: 20px;
+      background-color: black;
+      color: #ffd200;
+      opacity: 0; }
+    .portfolio .pf-items .pf-item:hover img {
+      opacity: 0.2; }
+    .portfolio .pf-items .pf-item:hover .pf-item-text {
+      opacity: 1; }
 
 .contact {
   text-align: center;
@@ -111,7 +128,7 @@ h2 {
   .contact .items {
     border: 2px solid #ffd200;
     height: 100px;
-    width: 65%;
+    width: 500px;
     padding: 5px;
     margin: 20px auto; }
   .contact .contact-item {
