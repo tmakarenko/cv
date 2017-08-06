@@ -21,12 +21,12 @@ header {
   width: 50px;
   height: 70px;
   margin-left: 20%;
-  border-bottom: black 2px solid; }
+  border-bottom: black 2px solid;
+  text-align: center; }
 
 .logo {
   height: 50px;
-  margin: 10px;
-  margin-left: -2.5%;
+  margin: 10px auto;
   float: left; }
 
 .logo img {
@@ -94,12 +94,15 @@ h2 {
   width: 60%;
   overflow: hidden;
     overflow-text-align: center; }
-  .portfolio .pf-item {
-    display: inline-block;
-    float: left;
-    padding: 5px;
-    margin: 15px 15px;
-    border: 1px solid #ffd200; }
+  .portfolio .pf-items {
+    width: 80%;
+    margin: 0 auto; }
+    .portfolio .pf-items .pf-item {
+      display: inline-block;
+      float: left;
+      padding: 5px;
+      margin: 15px 15px;
+      border: 1px solid #ffd200; }
 
 .contact {
   text-align: center;
@@ -108,9 +111,41 @@ h2 {
   .contact .items {
     border: 2px solid #ffd200;
     height: 100px;
-    width: 60%;
+    width: 65%;
     padding: 5px;
-    margin-left: 20%; }
+    margin: 20px auto; }
   .contact .contact-item {
     float: left;
-    margin-left: 25px; }
+    margin: 0 25px; }
+
+.back {
+  line-height: 0.5em;
+  font-weight: 900;
+  font-size: 2em;
+  position: relative;
+  left: -44%;
+  top: 17%;
+  padding: 15px 10px;
+  border: 2px solid #ffd200; }
+
+@media screen and (max-width: 890px) {
+  .pf-items {
+    width: 50% !important; }
+  .items {
+    width: 250px !important;
+    height: 220px !important; }
+  .contact-item {
+    width: 197px;
+    text-align: center;
+    margin: 0 auto; }
+  .back {
+    left: -40%; } }
+
+@media screen and (max-width: 575px) {
+  .items {
+    width: 50px; }
+  .pf-items {
+    width: 70% !important; }
+  .back {
+    left: -40%;
+    top: 17%; } }
